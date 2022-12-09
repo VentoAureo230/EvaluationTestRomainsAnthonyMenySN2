@@ -14,8 +14,9 @@
                    <= 18 => NombreRomain.ChiffreXV.Affichage(nombre),
                    19 => NombreRomain.ChiffreXX.Prédécesseur,
                    <= 23 => NombreRomain.ChiffreXX.Affichage(nombre),
-                   24 => "XXIV",
+                   24 => NombreRomain.ChiffreXXV.Prédécesseur,
                    <= 28 => NombreRomain.ChiffreXXV.Affichage(nombre),
+                   29 => NombreRomain.ChiffreXXX.Prédécesseur,
                    _ => null
                };
     }
