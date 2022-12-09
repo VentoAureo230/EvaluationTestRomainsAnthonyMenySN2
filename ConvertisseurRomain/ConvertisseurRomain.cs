@@ -19,6 +19,7 @@
                    29 => NombreRomain.ChiffreXXX.Prédécesseur,
                    <= 33 => NombreRomain.ChiffreXXX.Affichage(nombre),
                    34 => NombreRomain.ChiffreXXXV.Prédécesseur,
+                   <= 38 => NombreRomain.ChiffreXXXV.Affichage(nombre),
                    _ => null
                };
     }

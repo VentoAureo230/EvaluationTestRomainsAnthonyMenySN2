@@ -1,4 +1,5 @@
 
+using System.Runtime.InteropServices;
 using ConvertisseurRomain;
 using Newtonsoft.Json.Bson;
 
@@ -192,6 +193,19 @@ namespace NombreRomainsTest
             var attendu = ConvertisseurNombresRomains.Convert(nombre);
 
             Assert.Equal("XXXIV", attendu);
+        }
+
+        [Theory]
+        [InlineData(35)]
+        [InlineData(36)]
+        [InlineData(37)]
+        [InlineData(38)]
+
+        public void Convertir35et36et37et38(int x)
+        {
+            var attendu = ConvertisseurNombresRomains.Convert(x);
+
+            var result = "XXXV" + new String('I', x - 35);
         }
     }
 }
