@@ -33,48 +33,23 @@ namespace NombreRomainsTest
             Assert.Equal("IV", attendu);
         }
 
-        [Fact]
-        public void Convertir5enV()
-        {
-            // ETANT DONNE le chiffre 5
-            var nombre = 5;
+        [Theory]
+        [InlineData(5)]
+        [InlineData(6)]
+        [InlineData(7)]
+        [InlineData(8)]
 
+        public void Convertir5et6et7et8(int x)
+        {
+            // ETANT DONNE un chiffre x allant de 5 à 8
             // QUAND on le convertit en nombre romains
-            var attendu = ConvertisseurNombresRomains.Convert(nombre);
+            var attendu = ConvertisseurNombresRomains.Convert(x);
 
-            // ALORS on obtient le nombre V
-            Assert.Equal("V", attendu);
+            // ALORS on obtient le nombre romain V + I ou II ou III
+            var result = 'V' + new String('I', x - 5);
+            Assert.Equal(result, attendu);
         }
 
-        [Fact]
-        public void Convertir6enVI()
-        {
-            var nombre = 6;
-
-            var attendu = ConvertisseurNombresRomains.Convert(nombre);
-
-            Assert.Equal("VI", attendu);
-        }
-
-        [Fact]
-        public void Convertir7enVII()
-        {
-            var nombre = 7;
-
-            var attendu = ConvertisseurNombresRomains.Convert(nombre);
-
-            Assert.Equal("VII", attendu);
-        }
-
-        [Fact]
-        public void Convertir8enVIII()
-        {
-            var nombre = 8;
-
-            var attendu = ConvertisseurNombresRomains.Convert(nombre);
-
-            Assert.Equal("VIII", attendu);
-        }
 
         [Fact]
         public void Convertir9enIX()
