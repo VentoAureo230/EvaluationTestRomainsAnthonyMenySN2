@@ -32,6 +32,8 @@
                     return "XII";
                 case 13:
                     return "XIII";
+                case 14:
+                    return "XIV";
             }
 
             return null;
