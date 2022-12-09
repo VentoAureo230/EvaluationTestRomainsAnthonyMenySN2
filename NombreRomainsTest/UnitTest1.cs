@@ -169,5 +169,18 @@ namespace NombreRomainsTest
 
             Assert.Equal("XXIX", attendu);
         }
+
+        [Theory]
+        [InlineData(30)]
+        [InlineData(31)]
+        [InlineData(32)]
+        [InlineData(33)]
+
+        public void Convertir30et31et32et33(int x)
+        {
+            var attendu = ConvertisseurNombresRomains.Convert(x);
+
+            var result = "XXX" + new String('I', x - 30);
+        }
     }
 }
