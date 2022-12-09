@@ -85,5 +85,15 @@ namespace NombreRomainsTest
 
             Assert.Equal("IX", attendu);
         }
+
+        [Fact]
+        public void Convertir10enX()
+        {
+            var nombre = 10;
+
+            var attendu = ConvertisseurNombresRomains.Convert(nombre);
+
+            Assert.Equal("X", attendu);
+        }
     }
 }
