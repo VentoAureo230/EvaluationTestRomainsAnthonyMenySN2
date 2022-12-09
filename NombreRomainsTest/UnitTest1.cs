@@ -133,5 +133,16 @@ namespace NombreRomainsTest
             var result = "XX" + new String('I', x - 20);
             Assert.Equal(result, attendu);
         }
+
+        [Fact]
+
+        public void Convertir24enXXIV()
+        {
+            var nombre = 24;
+
+            var attendu = ConvertisseurNombresRomains.Convert(nombre);
+            
+            Assert.Equal("XXIV", attendu);
+        }
     }
 }

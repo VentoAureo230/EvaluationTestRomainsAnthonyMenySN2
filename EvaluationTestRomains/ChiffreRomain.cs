@@ -10,6 +10,9 @@
         public static readonly NombreRomain LettreX = new("X", 10);
         public static readonly NombreRomain ChiffreXV = new("XV", 15);
         public static readonly NombreRomain ChiffreXX = new("XX", valeur: 20);
+        public static readonly NombreRomain ChiffreXXV = new("XXV", valeur: 25);
+        public static readonly NombreRomain ChiffreXXX = new("XXX", valeur: 30);
+        public static readonly NombreRomain ChiffreXXXV = new("XXXV", valeur: 35);
 
         private NombreRomain(string lettre, int valeur)
         {
