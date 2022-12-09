@@ -1,7 +1,4 @@
-﻿using System.Text;
-using EvaluationTestRomains;
-
-namespace ConvertisseurRomain
+﻿namespace ConvertisseurRomain
 {
     public static class ConvertisseurNombresRomains
     {
