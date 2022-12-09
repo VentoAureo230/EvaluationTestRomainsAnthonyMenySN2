@@ -182,5 +182,16 @@ namespace NombreRomainsTest
 
             var result = "XXX" + new String('I', x - 30);
         }
+
+        [Fact]
+
+        public void Convertir34enXXXIV()
+        {
+            var nombre = 34;
+
+            var attendu = ConvertisseurNombresRomains.Convert(nombre);
+
+            Assert.Equal("XXXIV", attendu);
+        }
     }
 }
