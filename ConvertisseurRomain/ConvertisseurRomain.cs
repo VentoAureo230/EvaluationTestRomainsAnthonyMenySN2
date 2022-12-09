@@ -13,7 +13,7 @@
                    14 => "XIV",
                    <= 18 => NombreRomain.ChiffreXV.Affichage(nombre),
                    19 => "XIX",
-                   20 => "XX",
+                   <= 23 => NombreRomain.ChiffreXX.Affichage(nombre),
                    _ => null
                };
     }
