@@ -93,44 +93,21 @@ namespace NombreRomainsTest
             Assert.Equal("XIV", attendu);
         }
 
-        [Fact]
-        public void Convertir15EnXV()
+        [Theory]
+        [InlineData(15)]
+        [InlineData(16)]
+        [InlineData(17)]
+        [InlineData(18)]
+
+        public void Convertir15et16et17et18(int x)
         {
-            var nombre = 15;
+            // ETANT DONNE un nombre X compris entre 15 et 18
+            // QUAND on le convertit en nombre romain
+            var attendu = ConvertisseurNombresRomains.Convert(x);
 
-            var attendu = ConvertisseurNombresRomains.Convert(nombre);
-
-            Assert.Equal("XV", attendu);
-        }
-
-        [Fact]
-        public void Convertir16EnXVI()
-        {
-            var nombre = 16;
-
-            var attendu = ConvertisseurNombresRomains.Convert(nombre);
-
-            Assert.Equal("XVI", attendu);
-        }
-
-        [Fact]
-        public void Convertir17EnXVII()
-        {
-            var nombre = 17;
-
-            var attendu = ConvertisseurNombresRomains.Convert(nombre);
-
-            Assert.Equal("XVII", attendu);
-        }
-
-        [Fact]
-        public void Convertir18EnXVIII()
-        {
-            var nombre = 18;
-
-            var attendu = ConvertisseurNombresRomains.Convert(nombre);
-
-            Assert.Equal("XVIII", attendu);
+            // ALORS on obtient XV + I ou II ou III
+            var result = "XV" + new String('I', x - 15);
+            Assert.Equal(result, attendu);
         }
 
         [Fact]
