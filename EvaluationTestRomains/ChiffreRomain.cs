@@ -6,6 +6,7 @@
         private readonly int _valeur;
 
         public static readonly NombreRomain LettreI = new("I", 1);
+        public static readonly NombreRomain LettreV = new("V", 5);
 
         private NombreRomain(string lettre, int valeur)
         {

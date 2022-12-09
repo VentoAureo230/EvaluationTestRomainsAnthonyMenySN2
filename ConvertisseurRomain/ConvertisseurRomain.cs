@@ -7,7 +7,7 @@
                {
                    <= 3 => NombreRomain.LettreI.Affichage(nombre),
                    4 => "IV",
-                   <= 8 => NombreRomain.LettreI.Affichage(nombre),
+                   <= 8 => NombreRomain.LettreV.Affichage(nombre),
                    9 => "IX",
                    10 => "X",
                    11 => "XI",
