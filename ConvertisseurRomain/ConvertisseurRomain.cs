@@ -9,10 +9,7 @@
                    4 => "IV",
                    <= 8 => NombreRomain.LettreV.Affichage(nombre),
                    9 => "IX",
-                   10 => "X",
-                   11 => "XI",
-                   12 => "XII",
-                   13 => "XIII",
+                   <= 13 => NombreRomain.LettreX.Affichage(nombre),
                    14 => "XIV",
                    _ => null
                };

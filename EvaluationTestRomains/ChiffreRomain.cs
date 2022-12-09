@@ -7,6 +7,7 @@
 
         public static readonly NombreRomain LettreI = new("I", 1);
         public static readonly NombreRomain LettreV = new("V", 5);
+        public static readonly NombreRomain LettreX = new("X", 10);
 
         private NombreRomain(string lettre, int valeur)
         {
