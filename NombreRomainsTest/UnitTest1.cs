@@ -30,7 +30,7 @@ namespace NombreRomainsTest
             var attendu = ConvertisseurNombresRomains.Convert(nombre);
 
             // ALORS on obtient le nombre IV
-            Assert.Equal("IV", nombre);
+            Assert.Equal("IV", attendu);
         }
     }
 }
