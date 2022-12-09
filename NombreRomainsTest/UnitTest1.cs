@@ -92,5 +92,65 @@ namespace NombreRomainsTest
             // ALORS on obtient XIV
             Assert.Equal("XIV", attendu);
         }
+
+        [Fact]
+        public void Convertir15EnXV()
+        {
+            var nombre = 15;
+
+            var attendu = ConvertisseurNombresRomains.Convert(nombre);
+
+            Assert.Equal("XV", attendu);
+        }
+
+        [Fact]
+        public void Convertir16EnXVI()
+        {
+            var nombre = 16;
+
+            var attendu = ConvertisseurNombresRomains.Convert(nombre);
+
+            Assert.Equal("XVI", attendu);
+        }
+
+        [Fact]
+        public void Convertir17EnXVII()
+        {
+            var nombre = 17;
+
+            var attendu = ConvertisseurNombresRomains.Convert(nombre);
+
+            Assert.Equal("XVII", attendu);
+        }
+
+        [Fact]
+        public void Convertir18EnXVIII()
+        {
+            var nombre = 18;
+
+            var attendu = ConvertisseurNombresRomains.Convert(nombre);
+
+            Assert.Equal("XVIII", attendu);
+        }
+
+        [Fact]
+        public void Convertir19EnXIX()
+        {
+            var nombre = 19;
+
+            var attendu = ConvertisseurNombresRomains.Convert(nombre);
+
+            Assert.Equal("XIX", attendu);
+        }
+
+        [Fact]
+        public void Convertir20enXX()
+        {
+            var nombre = 20;
+
+            var attendu = ConvertisseurNombresRomains.Convert(nombre);
+
+            Assert.Equal("XX", attendu);
+        }
     }
 }
