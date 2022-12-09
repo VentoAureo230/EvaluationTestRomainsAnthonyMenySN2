@@ -26,6 +26,12 @@
                     return "IX";
                 case 10:
                     return "X";
+                case 11:
+                    return "XI";
+                case 12:
+                    return "XII";
+                case 13:
+                    return "XIII";
             }
 
             return null;

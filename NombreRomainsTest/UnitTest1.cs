@@ -62,22 +62,13 @@ namespace NombreRomainsTest
             Assert.Equal("IX", attendu);
         }
 
-        [Fact]
-        public void Convertir10enX()
-        {
-            var nombre = 10;
-
-            var attendu = ConvertisseurNombresRomains.Convert(nombre);
-
-            Assert.Equal("X", attendu);
-        }
-
         [Theory]
+        [InlineData(10)]
         [InlineData(11)]
         [InlineData(12)]
         [InlineData(13)]
 
-        public void Convertir11et12et13(int x)
+        public void Convertir10et11et12et13(int x)
         {
             // ETANT DONNE un chiffre xcompris en 11 et 13
             // QUAND on le convertit en nombre romain
