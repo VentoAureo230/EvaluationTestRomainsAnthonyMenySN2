@@ -75,5 +75,15 @@ namespace NombreRomainsTest
 
             Assert.Equal("VIII", attendu);
         }
+
+        [Fact]
+        public void Convertir9enIX()
+        {
+            var nombre = 9;
+
+            var attendu = ConvertisseurNombresRomains.Convert(nombre);
+
+            Assert.Equal("IX", attendu);
+        }
     }
 }
