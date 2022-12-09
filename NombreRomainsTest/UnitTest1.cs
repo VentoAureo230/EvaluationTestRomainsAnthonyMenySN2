@@ -18,5 +18,19 @@ namespace NombreRomainsTest
             // ALORS on obtient x fois le nombre I
             var result = new String('I', x);
         }
+
+        [Fact]
+
+        public void Convertir4enIV()
+        {
+            // ETANT DONNE le chiffre 4
+            var nombre = 4;
+
+            // QUAND on le convertit en nombre romains
+            var attendu = ConvertisseurNombresRomains.Convert(nombre);
+
+            // ALORS on obtient le nombre IV
+            Assert.Equal("IV", nombre);
+        }
     }
 }
