@@ -144,5 +144,18 @@ namespace NombreRomainsTest
             
             Assert.Equal("XXIV", attendu);
         }
+
+        [Theory]
+        [InlineData(25)]
+        [InlineData(26)]
+        [InlineData(27)]
+        [InlineData(28)]
+
+        public void Convertir25et26et27et28(int x)
+        {
+            var attendu = ConvertisseurNombresRomains.Convert(x);
+
+            var result = "XXV" + new String('I', x - 25);
+        }
     }
 }
