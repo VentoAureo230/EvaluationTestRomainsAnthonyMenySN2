@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvaluationTestRomains", "Ev
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NombreRomainsTest", "NombreRomainsTest\NombreRomainsTest.csproj", "{1B58740C-B115-4B9E-9AB4-C1D9FEF65829}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertisseurRomain", "ConvertisseurRomain\ConvertisseurRomain.csproj", "{0AD4BBD9-A8E9-4E8D-A04E-170A18FB4F99}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{1B58740C-B115-4B9E-9AB4-C1D9FEF65829}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B58740C-B115-4B9E-9AB4-C1D9FEF65829}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B58740C-B115-4B9E-9AB4-C1D9FEF65829}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AD4BBD9-A8E9-4E8D-A04E-170A18FB4F99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AD4BBD9-A8E9-4E8D-A04E-170A18FB4F99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AD4BBD9-A8E9-4E8D-A04E-170A18FB4F99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AD4BBD9-A8E9-4E8D-A04E-170A18FB4F99}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
