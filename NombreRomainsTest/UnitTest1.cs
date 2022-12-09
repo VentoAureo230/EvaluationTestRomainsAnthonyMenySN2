@@ -120,14 +120,18 @@ namespace NombreRomainsTest
             Assert.Equal("XIX", attendu);
         }
 
-        [Fact]
-        public void Convertir20enXX()
+        [Theory]
+        [InlineData(20)]
+        [InlineData(21)]
+        [InlineData(22)]
+        [InlineData(23)]
+
+        public void Convertir20et21et22et23(int x)
         {
-            var nombre = 20;
+            var attendu = ConvertisseurNombresRomains.Convert(x);
 
-            var attendu = ConvertisseurNombresRomains.Convert(nombre);
-
-            Assert.Equal("XX", attendu);
+            var result = "XX" + new String('I', x - 20);
+            Assert.Equal(result, attendu);
         }
     }
 }
