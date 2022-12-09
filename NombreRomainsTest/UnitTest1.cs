@@ -1,3 +1,4 @@
+using System.Runtime.InteropServices.ComTypes;
 using ConvertisseurRomain;
 
 namespace NombreRomainsTest
@@ -69,6 +70,22 @@ namespace NombreRomainsTest
             var attendu = ConvertisseurNombresRomains.Convert(nombre);
 
             Assert.Equal("X", attendu);
+        }
+
+        [Theory]
+        [InlineData(11)]
+        [InlineData(12)]
+        [InlineData(13)]
+
+        public void Convertir11et12et13(int x)
+        {
+            // ETANT DONNE un chiffre xcompris en 11 et 13
+            // QUAND on le convertit en nombre romain
+            var attendu = ConvertisseurNombresRomains.Convert(x);
+
+            // ALORS on obtient un nombre romain X + I ou II ou III
+            var result = 'X' + new String('I', x - 10);
+            Assert.Equal(result, attendu);
         }
     }
 }
