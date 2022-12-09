@@ -1,4 +1,4 @@
-using System.Runtime.InteropServices.ComTypes;
+
 using ConvertisseurRomain;
 
 namespace NombreRomainsTest
@@ -10,7 +10,7 @@ namespace NombreRomainsTest
         [InlineData(2)]
         [InlineData(3)]
 
-        public void Convertir1et2et3(int x)
+        public void Convertir1Et2Et3(int x)
         {
             // ETANT DONNE un nombre x compris entre 1 et 3
             // QUAND on le convertit en nombre romains
@@ -22,7 +22,7 @@ namespace NombreRomainsTest
 
         [Fact]
 
-        public void Convertir4enIV()
+        public void Convertir4EnIv()
         {
             // ETANT DONNE le chiffre 4
             var nombre = 4;
@@ -40,7 +40,7 @@ namespace NombreRomainsTest
         [InlineData(7)]
         [InlineData(8)]
 
-        public void Convertir5et6et7et8(int x)
+        public void Convertir5Et6Et7Et8(int x)
         {
             // ETANT DONNE un chiffre x allant de 5 à 8
             // QUAND on le convertit en nombre romains
@@ -53,7 +53,7 @@ namespace NombreRomainsTest
 
 
         [Fact]
-        public void Convertir9enIX()
+        public void Convertir9EnIx()
         {
             var nombre = 9;
 
@@ -68,7 +68,7 @@ namespace NombreRomainsTest
         [InlineData(12)]
         [InlineData(13)]
 
-        public void Convertir10et11et12et13(int x)
+        public void Convertir10Et11Et12Et13(int x)
         {
             // ETANT DONNE un chiffre xcompris en 11 et 13
             // QUAND on le convertit en nombre romain
@@ -81,7 +81,7 @@ namespace NombreRomainsTest
 
         [Fact]
 
-        public void Convertir14enXIV()
+        public void Convertir14EnXiv()
         {
             // ETANT DONNE le nombre 14
             var nombre = 14;
