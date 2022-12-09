@@ -5,7 +5,9 @@ namespace NombreRomainsTest
         [Fact]
         public void Test1()
         {
-
+            // ETANT DONNE un chiffre 1
+            // QUAND
+            // ALORS on attend
         }
     }
 }

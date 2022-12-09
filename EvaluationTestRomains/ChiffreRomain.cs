@@ -1,6 +1,6 @@
 ﻿namespace EvaluationTestRomains
 {
-    public class Class1
+    public class ChiffreRomain
     {
 
     }
