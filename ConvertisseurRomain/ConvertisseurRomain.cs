@@ -24,6 +24,8 @@
                     return "VIII";
                 case 9:
                     return "IX";
+                case 10:
+                    return "X";
             }
 
             return null;
