@@ -1,5 +1,6 @@
 
 using ConvertisseurRomain;
+using Newtonsoft.Json.Bson;
 
 namespace NombreRomainsTest
 {
@@ -156,6 +157,17 @@ namespace NombreRomainsTest
             var attendu = ConvertisseurNombresRomains.Convert(x);
 
             var result = "XXV" + new String('I', x - 25);
+        }
+
+        [Fact]
+
+        public void Convertir29enXXIX()
+        {
+            var nombre = 29;
+
+            var attendu = ConvertisseurNombresRomains.Convert(nombre);
+
+            Assert.Equal("XXIX", attendu);
         }
     }
 }
