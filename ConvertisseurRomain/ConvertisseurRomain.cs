@@ -6,13 +6,13 @@
             => nombre switch
                {
                    <= 3 => NombreRomain.LettreI.Affichage(nombre),
-                   4 => "IV",
+                   4 => NombreRomain.LettreV.Prédécesseur,
                    <= 8 => NombreRomain.LettreV.Affichage(nombre),
-                   9 => "IX",
+                   9 => NombreRomain.LettreX.Prédécesseur,
                    <= 13 => NombreRomain.LettreX.Affichage(nombre),
-                   14 => "XIV",
+                   14 => NombreRomain.ChiffreXV.Prédécesseur,
                    <= 18 => NombreRomain.ChiffreXV.Affichage(nombre),
-                   19 => "XIX",
+                   19 => NombreRomain.ChiffreXX.Prédécesseur,
                    <= 23 => NombreRomain.ChiffreXX.Affichage(nombre),
                    _ => null
                };
